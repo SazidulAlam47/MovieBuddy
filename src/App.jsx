@@ -1,18 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import Movies from './pages/Movies';
-import ErrorPage from './pages/ErrorPage/ErrorPage';
+import { RouterProvider } from "react-router/dom";
+import router from "./routes/router";
 
 const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/movies" element={<Movies />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-    </BrowserRouter>
-  );
+    return <RouterProvider router={router} />;
 };
 
 export default App;
