@@ -1,7 +1,6 @@
 import { Link } from "react-router";
 import robotMascot from "../../../assets/robot.png";
-
-const BRAND_NAME = "MovieExplorer";
+import { BRAND_NAME } from "../../../constants/common";
 
 const HeaderLogo = () => {
     return (
